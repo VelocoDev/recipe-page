@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="A simple and quick recipe for making a delicious omelette. Perfect for any meal, customizable with your favorite fillings.">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Recipe page</title>
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --stone-100: hsl(30, 54%, 90%);
+      --stone-150: hsl(30, 18%, 87%);
+      --stone-600: hsl(30, 10%, 34%);
+      --stone-900: hsl(24, 5%, 18%);
+      --brown-800: hsl(14, 45%, 36%);
+      --rose-800: hsl(332, 51%, 32%);
+      --rose-50: hsl(330, 100%, 98%);
+    }
+    @media (max-width: 768px) {
+    main {
+      width: 90%;
+      margin: 20px auto;
+      }
+    }
+    @font-face {
+      font-family: 'young sheriff';
+      src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Outfit';
+      src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: 20px;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--stone-150);
+    }
+    main {
+      width: 50%;
+      background-color: var(--white);
+      padding: 40px;
+      border-radius: 20px;
+      margin: 40px;
+    }
+    h1, h2 {
+      font-family: 'young sheriff';
+    }
+    h1 {
+      color: var(--stone-900);
+    }
+    h2, h3 {
+      color: var(--rose-800);
+    }
+    p {
+      font-size: 16px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    #Preparation-time {
+      margin: 40px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    #Nutrition {
+      margin: 40px;
+    }
+    table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+      
+    }
+    td {
+      border-bottom: 1px solid var(--rose-800);
+      padding: 15px
+    }
+
+    #Nutrition-value {
+      color: var(--rose-800);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+    <img src="assets/images/image-omelette.jpeg" alt="A delicious simple omelette"/>
+    <h1>Simple Omelette Recipe</h1>
+
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    </header>
+
+    <section id="Preparation-time"> 
+      <h3>Preparation time</h3>
+
+      <ul >
+        <li><b>Total</b>: Approximately 10 minutes</li>
+        <li><b>Preparation</b>: 5 minutes</li>
+        <li><b>Cooking</b>: 5 minutes</li>
+      </ul>
+
+    </section>
+    
+    
+    <section id="Ingredients">
+
+      <h2>Ingredients</h2>
+
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+
+    </section>
+    <hr>
+
+    <section id="Instructions">
+
+      <h2>Instructions</h2>
+
+      <ul>
+        <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.</li>
+
+        <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+
+        <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        the eggs evenly coat the surface.</li>
+
+        <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.</li>
+
+        <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+
+        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+      </ul>
+
+    </section>
+    <hr>
+
+    <section id="Nutrition">
+
+      <h2>Nutrition</h2>
+
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+      <table>
+
+        <tr>
+          <td>Calories</td>
+          <td id="Nutrition-value">277kcal</td>
+        </tr>
+
+        <tr>
+          <td>Carbs</td>
+          <td id="Nutrition-value">0g</td>
+        </tr>
+
+        <tr>
+          <td>Protein</td>
+          <td id="Nutrition-value">20g</td>
+        </tr>
+
+        <tr>
+          <td>Fat</td>
+          <td id="Nutrition-value">22g</td>
+        </tr>
+
+      </table>
+
+    </section>
+  
+    <div class="attribution">
+
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mostafa Atef</a>.
+
+    </div>
+  </main>
+</body>
+</html>
